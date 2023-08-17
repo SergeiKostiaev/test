@@ -1,26 +1,35 @@
 <script setup>
+import { capitalizeFirstLetter } from '../utils'
 
+const props = defineProps({
+  weatherInfo: {
+    type: [Object, null],
+    required: true,
+  }
+})
+const today = new Date().toLocaleDateString('en-En', {weekday: 'short', year: 'numeric', month: 'long', day: 'numeric'})
 </script>
 
 <template>
-<div class="summary">
+<div v-if="weatherInfo?.weather" class="summary">
     <div
+    :style="`background-image: url('/src/assets/img/weather-main/${weatherInfo?.weather[0].description}.png')`"
       class="pic-main">
     </div>
     <div class="weather">
       <div class="temp">
-        14 °C
+        {{Math.round(weatherInfo?.main?.temp)}} °C
         </div>
       <div class="weather-desc text-block">
-        Гроза
+        {{ capitalizeFirstLetter(weatherInfo?.weather[0].description) }}
       </div>
     </div>
     <div class="city text-block">
-      Париж,
-      Франция
+      {{weatherInfo?.name}}
+      {{ weatherInfo?.sys?.country }}
     </div>
     <div class="date text-block">
-      Чт, 16 марта 2023 г.
+      {{today}}
     </div>
 </div>
 </template>
@@ -35,7 +44,6 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: contain
-  background-image: url('../assets/img/weather-main/thunderstorm.png')
 
 .city
   font-size: 24px
