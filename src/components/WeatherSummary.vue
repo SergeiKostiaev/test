@@ -5,7 +5,6 @@
 <template>
 <div class="summary">
     <div
-      style="background-image: url('./img/weather-main/thunderstorm.png');"
       class="pic-main">
     </div>
     <div class="weather">
@@ -13,15 +12,15 @@
         14 °C
         </div>
       <div class="weather-desc text-block">
-        Thunderstorm
+        Гроза
       </div>
     </div>
     <div class="city text-block">
-      Paris,
-      FR
+      Париж,
+      Франция
     </div>
     <div class="date text-block">
-      Thu, March 16, 2023
+      Чт, 16 марта 2023 г.
     </div>
 </div>
 </template>
@@ -36,6 +35,7 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: contain
+  background-image: url('../assets/img/weather-main/thunderstorm.png')
 
 .city
   font-size: 24px

@@ -1,17 +1,15 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
 <div class="section highlights">
     <div class="title">
-      Today's Highlights
+      Погода на сегодня
     </div>
     <div class="highlights-wrapper">
       <div class="highlight">
         <div class="card">
           <div class="card-title">
-            Wind
+            Ветер
           </div>
           <div class="card-pic card-pic--wind"></div>
           <div class="card-info">
@@ -21,7 +19,7 @@
                   3.6
                 </div>
                 <div class="info-main-text">
-                  m/s
+                  м/с
                 </div>
               </div> 
               <div class="info-main">
@@ -29,7 +27,7 @@
                   350
                 </div>
                 <div class="info-main-text">
-                  deg
+                  градусов
                 </div>
               </div>
             </div>
@@ -37,7 +35,7 @@
         </div>
         <div class="card-small">
           <div class="card-small-title">
-            Wind gusts
+            Порывы ветра
           </div>
           <div class="card-small-info">
             <div class="card-small-data">
@@ -45,15 +43,15 @@
                 8.4
               </div>
               <div class="info-main-text">
-                m/s
+                м/с
               </div>
             </div>
             <div class="card-small-hint">
               <div class="card-small-pic card-small-pic--wind"></div>
               <div class="card-small-text text-egorova">
-                Learn
-                <a href="https://www.windy.com/articles/weather-phenomena-what-s-the-difference-between-sustained-winds-and-wind-gusts-10390?satellite,7.787,115.115,5" target="_blank">more</a>
-                about gusts
+                Узнать
+                <a href="https://www.windy.com/articles/weather-phenomena-what-s-the-difference-between-sustained-winds-and-wind-gusts-10390?satellite,7.787,115.115,5" target="_blank">больше</a>
+                о порывах ветра
               </div>
             </div>
           </div>
@@ -62,7 +60,7 @@
       <div class="highlight">
         <div class="card">
           <div class="card-title">
-            Pressure
+            Давление
           </div>
           <div class="card-pic card-pic--pressure"></div>
           <div class="card-info">
@@ -72,7 +70,7 @@
                   765
                 </div>
                 <div class="info-main-text">
-                  mm
+                  мм
                 </div>
               </div> 
             </div> 
@@ -80,7 +78,7 @@
         </div>
         <div class="card-small">
           <div class="card-small-title">
-            Feels like
+            Ощущается как
           </div>
           <div class="card-small-info">
             <div class="card-small-data">
@@ -94,7 +92,7 @@
             <div class="card-small-hint">
               <div class="card-small-pic card-small-pic--margin card-small-pic--pressure"></div>
               <div class="card-small-text">
-                How hot or cold it really feels
+                Как жарко или холодно на самом деле
               </div>
             </div>
           </div>
@@ -103,7 +101,7 @@
       <div class="highlight">
         <div class="card">
           <div class="card-title">
-            Sunrise and sunset
+            Восход и закат
           </div>
           <div class="card-pic card-pic--sun"></div>
           <div class="card-info">
@@ -111,7 +109,7 @@
               <div class="state">
                 <div class="state-pic"></div>
                 <div class="state-title">
-                  Sunrise
+                  Восход
                 </div>
                 <div class="state-time">
                   07:31:42
@@ -120,7 +118,7 @@
               <div class="state">
                 <div class="state-pic state-pic--flipped"></div>
                 <div class="state-title">
-                  Sunset
+                  Закат
                 </div>
                 <div class="state-time">
                   18:34:19
@@ -131,7 +129,7 @@
         </div>
         <div class="card-small">
           <div class="card-small-title">
-            Cloudiness
+            Облачность
           </div>
           <div class="card-small-info">
             <div class="card-small-data">
@@ -145,7 +143,7 @@
             <div class="card-small-hint">
               <div class="card-small-pic card-small-pic--sun"></div>
               <div class="card-small-text">
-                The sky fraction obscured by clouds
+                Фрагмент неба, закрытый облаками
               </div>
             </div>
           </div>
